@@ -310,6 +310,9 @@ nav .btn:hover {
 
 .tripList {
   list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+  grid-gap: 1rem;
 }
 
 .tripList li {
@@ -318,10 +321,16 @@ nav .btn:hover {
   border: solid 1px #dedede;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   padding: 1.8rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto minmax(140px, 1fr) auto;
 }
 
 .tripList h3,
 .tripList img {
+  grid-row: 1 / 2;
+  grid-column: 1;
+  align-self: end;
 }
 
 .tripList h3 {
@@ -690,6 +699,7 @@ footer {
 
   /* ######### 10a-iiI. Trips, Large screen rules ######### */
   .tripList {
+  
   }
 
   .trips article {

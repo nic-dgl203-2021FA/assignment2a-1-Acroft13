@@ -694,6 +694,8 @@ footer {
 
   .trips article {
     width: 90%;
+    display: flex;
+    align-items: center;
   }
 
   .trips h1 {
@@ -701,6 +703,7 @@ footer {
   }
 
   .trips p {
+    flex: 3;
   }
 
   /* ######### 10a-iv. CTA summaries, Large screen rules ######### */

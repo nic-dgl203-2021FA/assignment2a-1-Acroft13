@@ -235,6 +235,9 @@ nav::after {
 
 nav ul {
   list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 nav ul li a {
